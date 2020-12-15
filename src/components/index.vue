@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>TES123T</h1>
+  <div class="taskPlan" ref="taskPlanTimeForm" style="width:100%;height:100%">
+    <iframe :src="reportUrl" frameborder="0" style="width:100%;" :height="tableHeight" id="iframeBox"></iframe>
   </div>
 </template>
 
@@ -9,19 +9,19 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      reportUrl: "../../static/html/夜景.html",
+      tableHeight:window.screen.availHeight-106.6+'px'
     }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style>
 body {
+  margin: 0;
   width: 100%;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+  background-color: black;
 }
 </style>
