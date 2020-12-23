@@ -2,7 +2,7 @@
   <div class="taskPlan" ref="taskPlanTimeForm" style="width:100%;height:100%">
     <iframe :src="reportUrl" frameborder="0" style="width:100%;" :height="tableHeight" id="iframeBox"></iframe>
     <div id="loginBox">
-      <Avatar src="https://i.loli.net/2017/08/21/599a521472424.jpg" style="margin-left: 40%;" />
+      <Avatar src="../../static/img/sd.png" style="margin-left: 40%;" />
       <Input v-model="userName" placeholder="Enter name" style="width: auto;margin-top:10px;background-color: transparent;">
           <Icon type="ios-contact" slot="prefix" />
       </Input>
@@ -11,8 +11,7 @@
       </Input>
       <Button type="default" ghost long style="margin-top:30px" @click="test">Login</Button>
     </div>
-    <audio class="audio" src="../../static/mp3/zsj.mp3" controls autoplay="autoplay"
-      hidden="true"></audio>
+    <audio class="audio" src="../../static/mp3/zsj.mp3" controls autoplay="autoplay" hidden="true"></audio>
   </div>
 </template>
 
