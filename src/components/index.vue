@@ -12,6 +12,16 @@
       <Button type="default" ghost long style="margin-top:30px" @click="test">Login</Button>
     </div>
     <audio class="audio" src="../../static/mp3/zsj.mp3" controls autoplay="autoplay" hidden="true"></audio>
+    <Modal
+        v-model="modal1"
+        title="提示"
+        @on-ok="ok"
+        @on-cancel="cancel">
+        <p><u style="color: #e60bc1;margin-left: 30px;font-weight: 600;">紫莹</u>同学专属网站,请输入正确的用户名/密码！！！</p>
+        <div slot="footer">
+            
+        </div>
+    </Modal>
   </div>
 </template>
 
@@ -24,6 +34,7 @@ export default {
       tableHeight:window.screen.availHeight-106.6+'px',
       userName: "",
       passWord: "",
+      modal1:false
     }
   },
   mounted() {
@@ -35,9 +46,10 @@ export default {
       if(this.userName==="紫莹" && this.passWord==="991208"){
         //this.$router.push({ path:'../../static/html/互动星空.html'});
         //window.open("../../static/html/互动星空.html")
-        window.location.href="../../static/html/互动星空.html";
+        //window.location.href="../../static/html/互动星空.html";
+        window.location.href="../../static/html/index.html";
       }else{
-        alert("error")
+        this.modal1=true;
       }
     },
     audioAutoPlay() {
