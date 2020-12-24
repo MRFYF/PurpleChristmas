@@ -10,7 +10,17 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      '/PurpleChristmas': {
+        target: 'https://zhazah.github.io/PurpleChristmas/', //此处可以换成自己需要的地址
+        // target: 'http://localhost:8080/jybz',
+        // target: 'http://10.10.11.70:9550/jybz',  //正式环境
+        changeOrigin: true,
+        pathRewrite: {
+          '^/jybz': ''
+        }
+      }
+    },
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
