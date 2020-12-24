@@ -31,7 +31,7 @@ export default {
   data () {
     return {
       reportUrl: "../../static/html/夜景.html",
-      tableHeight:window.screen.availHeight-106.6+'px',
+      tableHeight:window.screen.availHeight-110.6+'px',
       userName: "",
       passWord: "",
       modal1:false
