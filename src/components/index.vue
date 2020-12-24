@@ -47,7 +47,8 @@ export default {
         //this.$router.push({ path:'../../static/html/互动星空.html'});
         //window.open("../../static/html/互动星空.html")
         //window.location.href="../../static/html/互动星空.html";
-        window.location.href="../../static/html/index.html";
+        // window.location.href="../../static/html/index.html";
+        window.location.href="../../static/html/index_sy.html";
       }else{
         this.modal1=true;
       }
