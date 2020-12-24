@@ -2,19 +2,59 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>动态散花背景</title>
+<link rel="shortcut icon" type="image/x-icon" href="../../static/favicon/favicon.ico">
+    <title>紫色圣诞节</title>
 <meta name="description" content="Change OR Die" />
 
 </head>
 
 <body>
+    <div id="blink">
+        <pre style="color: #ac7bac9c;margin-top: 42px;font-size: 18px;font-family: cursive;">
+            起初,
 
+            你拉我一起看雨,
+
+            大雨里百鬼夜行,
+
+            我们混在其中,
+
+            比鬼都高兴!
+
+            "师父,落叶了,秋天了。"
+            "说反了。"
+
+            "师父，有句话不知当讲不当讲。。。。。。"
+            "不当讲。"
+            "。。。。。。"
+
+            "师父，清早听到一阵爆竹响。"
+            "山下有人结婚。"
+            "结婚为什么要放爆竹啊？"
+            "想必是给自己状胆儿吧。"
+        </pre>
+    </div>
+    <!-- <audio controls="true" autoplay="autoplay" style="width:45px;position:fixed;top:65px;left:94%;z-index:100;
+	filter:alpha(opacity=30);  
+      -moz-opacity:0.3;  
+      -khtml-opacity: 0.3;  
+      opacity: 0.3;">
+        <source src="../mp3/zsj.mp3" type="audio/mp3">
+    </audio> -->
 <style type="text/css">
 *{margin:0;padding:0;list-style-type:none;}
 a,img{border:0;}
 body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+#blink{position: absolute;}
 </style>
-
+<script language="javascript">
+    function changeColor(){
+        var color="#ac7bac9c|#0f0|#00f|#880|#808|#088|yellow|green|blue|gray";
+        color=color.split("|");
+        document.getElementById("blink").style.color=color[parseInt(Math.random() * color.length)];
+    }
+    //setInterval("changeColor()",200);
+    </script> 
   <canvas id="sakura"></canvas>
 <!-- sakura shader -->
 <script id="sakura_point_vsh" type="x-shader/x_vertex">
@@ -303,7 +343,7 @@ void main(void) {
 }
 </script>
 
-  <script src="js/index.js"></script>
+  <script src="../js/index.js"></script>
 
 </body>
 
