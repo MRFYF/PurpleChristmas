@@ -2,7 +2,7 @@
   <div class="taskPlan" ref="taskPlanTimeForm" style="width:100%;height:100%">
     <iframe :src="reportUrl" frameborder="0" style="width:100%;" :height="tableHeight" id="iframeBox"></iframe>
     <div id="loginBox">
-      <Avatar src="../../static/img/sd.png" style="margin-left: 40%;" />
+      <Avatar src="./static/img/sd.png" style="margin-left: 40%;" />
       <Input v-model="userName" placeholder="Enter name" style="width: auto;margin-top:10px;background-color: transparent;">
           <Icon type="ios-contact" slot="prefix" />
       </Input>
@@ -11,7 +11,7 @@
       </Input>
       <Button type="default" ghost long style="margin-top:30px" @click="test">Login</Button>
     </div>
-    <audio class="audio" src="../../static/mp3/zsj.mp3" controls autoplay="autoplay" hidden="true"></audio>
+    <audio class="audio" src="./static/mp3/zsj.mp3" controls autoplay="autoplay" hidden="true"></audio>
     <Modal
         v-model="modal1"
         title="提示"
@@ -30,7 +30,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      reportUrl: "../../static/html/夜景.html",
+      reportUrl: "./static/html/夜景.html",
       tableHeight:window.screen.availHeight-110.6+'px',
       userName: "",
       passWord: "",
@@ -44,11 +44,11 @@ export default {
   methods: {
     test(){
       if(this.userName==="紫莹" && this.passWord==="991208"){
-        //this.$router.push({ path:'../../static/html/互动星空.html'});
-        //window.open("../../static/html/互动星空.html")
-        //window.location.href="../../static/html/互动星空.html";
-        // window.location.href="../../static/html/index.html";
-        window.location.href="../../static/html/index_sy.html";
+        //this.$router.push({ path:'./static/html/互动星空.html'});
+        //window.open("./static/html/互动星空.html")
+        //window.location.href="./static/html/互动星空.html";
+        // window.location.href="./static/html/index.html";
+        window.location.href="./static/html/index_sy.html";
       }else{
         this.modal1=true;
       }
