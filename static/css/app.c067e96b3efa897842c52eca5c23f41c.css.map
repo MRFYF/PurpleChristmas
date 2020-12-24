@@ -1,1 +1,0 @@
-{"version":3,"sources":["app.c067e96b3efa897842c52eca5c23f41c.css"],"names":[],"mappings":"AACA,sBACE,UAAW,CACX,WAAY,CACZ,QAAS,CACT,SAAU,CACV,eACF","file":"app.c067e96b3efa897842c52eca5c23f41c.css","sourcesContent":["\nbody[data-v-3f432f53] {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow: hidden;\n}\n"]}
