@@ -2,7 +2,7 @@
   <div class="taskPlan" ref="taskPlanTimeForm" style="width:100%;height:100%">
     <iframe :src="reportUrl" frameborder="0" style="width:100%;" :height="tableHeight" id="iframeBox"></iframe>
     <div id="loginBox">
-      <Avatar src="./static/img/sd.png" style="margin-left: 40%;" />
+      <Avatar src="./static/img/love.jpg" style="margin-left: 40%;" />
       <Input v-model="userName" placeholder="Enter name" style="width: auto;margin-top:10px;background-color: transparent;">
           <Icon type="ios-contact" slot="prefix" />
       </Input>
